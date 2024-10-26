@@ -1,0 +1,87 @@
+header{
+    background-color: #191d32;
+    height: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.interactiveMenuContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navegationMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+    list-style: none;
+
+
+    color: var(--Schemes-On-Primary, #FFF);
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navegationMenu li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 852px) {
+    header {
+        flex-direction: column; /* Cambiar a fila en dispositivos móviles */
+        justify-content: space-between; /* Ajustar el espacio entre los elementos, si es necesario */
+    }
+
+
+    .interactiveMenuContainer{
+        flex-direction: row;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    .navegationMenu{
+        gap: 0px;
+        font-size: clamp(.7rem, .7vw, .7rem);
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        gap: 15px;
+        padding-right: 15px;
+
+        width: 170px;
+
+        margin-bottom: 20px;
+    }
+
+    
+
+
+}

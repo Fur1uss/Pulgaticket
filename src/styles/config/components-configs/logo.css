@@ -1,0 +1,58 @@
+
+.logo-container{
+    border-radius: 76px;
+    background: var(--Schemes-On-Primary, #FFF);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    display: flex;
+    gap: 5px;
+
+    width: auto;
+    max-width: 258px;
+
+    height: auto;
+    flex-shrink: 0;
+
+    padding: 5px;
+
+}
+
+.logo-container img{
+    width: 20%;
+    height: auto;
+}
+
+.logo-text{
+    color: var(--Schemes-On-Primary, #917052);
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo-text b{
+    color: var(--Schemes-On-Primary, #191D32);
+    font-family: "Jockey One";
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+
+@media (max-width: 852px) {
+
+    .logo-container {
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+}
+
+

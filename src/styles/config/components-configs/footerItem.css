@@ -1,0 +1,153 @@
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #191d32;
+
+    width: 100%;
+    height: 500px;
+    
+    border-radius:  2006px 2006px 0px 0px/ 119px 119px 0px 0px;
+}
+
+.footerInfo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    width: 100%;
+    height: 40%;
+
+    margin-top: 30px;
+}
+
+.footerInfo-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+
+}
+
+.footerNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100%;
+
+}
+
+.footerNav p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(.5rem, .9vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerText-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+    height: 100%;
+
+}
+
+.footerText-container p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(.5rem, .9vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.footerContact-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 0;
+
+    width: 100%;
+    height: 30%;
+
+}
+
+.footerContactItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+    height: 100%;
+
+}
+
+.footerContactItemHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 50%;
+
+}
+
+.footerContactItemIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 20%;
+    height: 50%;
+
+}
+
+.footerContactItemIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.footerContactItemText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 50%;
+
+}
+
+.footerContactItemText p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(.5rem, .9vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

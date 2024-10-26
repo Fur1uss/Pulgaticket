@@ -1,0 +1,155 @@
+.aboutPage-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1500px;
+    gap: 5%;
+
+    margin-top: 200px;
+
+    overflow: hidden;
+}
+
+.aboutInfoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.infoTextContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.TextItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+        
+    font-family: "Jockey One";
+}
+
+.TextItems h1{
+    color: #FF8A00;
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 0;
+    margin: 0;
+}
+
+.TextItems h2{
+    color: #000;
+    font-family: "Jockey One";
+    font-size: clamp(.1rem, 6vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 0;
+    margin: 0;
+}
+
+.h2-b{
+    color: #FF8A00;
+    font-weight: 400;
+}
+
+.p-b{
+    color: #917052;
+    font-weight: 400;
+}
+
+
+.TextItems p{
+    color: #000;
+    font-family: "Jockey One";
+    font-size: clamp(1rem, 1.5vw, 1.6rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+
+.infoImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.infoImageContainer img{
+    width: 50%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+
+    .aboutInfoContainer{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .infoImageContainer{
+        width: 100%;
+        height: 70%;
+
+    }
+
+
+    .infoTextContainer{
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+
+        height: 30%;
+    }
+
+    .TextItems{
+        width: 70%;
+        height: 30%;
+        text-align: center;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .TextItems h1{
+        display: none;
+    }
+
+    .TextItems p{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    br{
+        display: none;
+    }
+}

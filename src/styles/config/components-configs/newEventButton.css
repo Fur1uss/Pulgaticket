@@ -1,0 +1,24 @@
+.new-event-button {
+    border-radius: 46px;
+    background: #B5E388;
+    border:  none;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    width: auto;
+    max-width: 258px;
+
+    height: auto;
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    color: var(--Schemes-On-Primary, #FFF);
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}

@@ -1,0 +1,222 @@
+.ItemEvent-container{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F7F7F8;
+    gap: 0;
+
+    width: 15%;
+    height: 100%;
+    min-height: 500px;
+    border-radius: 13px;
+}
+
+.ItemEvent-container img{
+    width: 100%;
+    height: 55%;
+}
+
+.itemEvent-itemList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+
+
+}
+
+.itemEvent-itemList {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Jockey One";
+    color: #000;
+
+
+}
+
+
+.data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50%;
+
+}
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: 65%;
+    height: 100%;
+
+    padding-left: 20px;
+}
+
+.locationText{
+    color: #191D32;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: clamp(.8rem, 1vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dateText{
+    color: #191D32;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: clamp(.8rem, 1vw, 2.5rem);
+}
+
+.timeText{
+    color: #191D32;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: clamp(.8rem, 1vw, 2.5rem);
+
+}
+
+.sellerText{
+    color: #191D32;
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: clamp(.8rem, 1.2vw, 2.5rem);
+    text-wrap: wrap;
+}
+
+
+.buy-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    height: 100%;
+    
+}
+
+.buy-container button{
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+
+}
+
+.buy-container button img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.itemEvent-Location{
+    padding: 5px;
+    margin: 0;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.itemEvent-Location img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.date-time-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ItemEvent-container p{
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    height: auto;
+}
+
+
+
+/*Esto es el carrusel en general*/
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+
+    width: 100%;
+    height: auto;
+    max-height: fit-content;
+    min-height: fit-content;
+    padding: 20px;
+}
+
+.event-cards {
+    display: flex; /* Usar flexbox para los eventos */
+    overflow: hidden; /* Ocultar cualquier evento que se desborde */
+}
+
+.ItemEvent-container {
+    margin: 0 10px; /* Espaciado entre cada tarjeta de evento */
+    min-width: 300px; /* Ancho mínimo para cada tarjeta (ajusta según tus necesidades) */
+}
+
+.leftButton{
+    width: 69.333px;
+    height: 69.333px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.leftButton img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rightButton{
+    width: 69.333px;
+    height: 69.333px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.rightButton img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

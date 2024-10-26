@@ -1,0 +1,45 @@
+
+
+.loginButton{
+    border-radius: 46px;
+    background: #917052;
+    border:  none;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    width: auto;
+    max-width: 258px;
+
+    height: auto;
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    color: var(--Schemes-On-Primary, #FFF);
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+@media (max-width: 852px) {
+    .loginButton {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: clamp(.7rem, 1vw, 1.5rem);
+        text-wrap: nowrap;
+    }
+
+    .loginButton-container{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
