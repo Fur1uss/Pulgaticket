@@ -10,25 +10,26 @@ import { HeaderLowerPartApp } from "./apps/header/headerLowerPartApp";
 import { FooterApp } from "./apps/footer/footerApp";
 
 // Configuración de estilos principales
-import "./styles/header/header.css";
-import "./styles/header/headerLowerPart.css";
-import "./styles/config/body.css";
-import "./styles/main/main.css";
-import "./styles/main/mainEvents.css";
-import "./styles/footer/footer.css";
-import "./styles/config/components-configs/logo.css";
-import "./styles/config/Components-configs/loginButton.css";
-import "./styles/config/Components-configs/ItemEvent.css";
-import "./styles/config/Components-configs/footerItem.css";
-import "./styles/config/Components-configs/usernameButton.css";
-import "./styles/about.css";
-import "./styles/contact.css";
-import "./styles/login.css";
-import "./styles/register.css";
-import "./styles/config/Components-configs/newEventButton.css";
+import "../src/styles/header/header.css";
+import "../src/styles/header/headerLowerPart.css";
+import "../src/styles/config/body.css";
+import "../src/styles/main/main.css";
+import "../src/styles/main/mainEvents.css";
+import "../src/styles/footer/footer.css";
+import "../src/styles/config/components-configs/logo.css";
+import "../src/styles/config/components-configs/loginButton.css";
+import "../src/styles/config/components-configs/itemEvent.css";
+import "../src/styles/config/components-configs/footerItem.css"
+import "../src/styles/config/components-configs/usernameButton.css";
+import "../src/styles/about.css";
+import "../src/styles/contact.css";
+import "../src/styles/login.css";
+import "../src/styles/register.css";
+import "../src/styles/config/components-configs/newEventButton.css";
 
 // Usuarios
 import { UserProvider } from "./users/userContext";
+
 
 // Páginas
 import { MainApp } from "./apps/main/mainApp";

@@ -42,11 +42,14 @@ export const LoginPage = () => {
                     // Verificar la contraseña
                     if (userData.passwordUser === password) {
                         isPasswordCorrect = true;
-                        loggedInUser = { userName: userData.userName }; // Almacena los datos del usuario
+                        loggedInUser = { userName: userData.userName, passwordUser: userData.passwordUser }; // Almacena los datos del usuario
                     }
                 });
 
                 if (isPasswordCorrect) {
+                    // Contraseña correcta, guardar en localStorage
+                    localStorage.setItem("user", JSON.stringify(loggedInUser));
+
                     // Contraseña correcta, redirigir al home
                     console.log("Inicio de sesión exitoso");
                     login(loggedInUser); // Llama a login con el usuario

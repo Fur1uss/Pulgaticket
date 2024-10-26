@@ -3,6 +3,7 @@ import { LogoComponent } from "../components/logoComponent";
 import { useNavigate } from "react-router-dom";
 import { db } from "../firebase/config";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
+import { useUser } from "../users/userContext"; // Importa el contexto de usuario
 
 export const RegisterPage = () => {
     const [rut, setRut] = useState("");
@@ -14,6 +15,7 @@ export const RegisterPage = () => {
     const [successModal, setSuccessModal] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const navigate = useNavigate();
+    const { login } = useUser(); // Accede a la función de login del contexto
     const validDomains = ["gmail.com", "hotmail.com", "yahoo.com", "outlook.com"];
 
     const formatRUT = (value) => {
@@ -47,6 +49,10 @@ export const RegisterPage = () => {
         return validDomains.includes(domain);
     };
 
+    const isPasswordValid = (password) => {
+        return password.length >= 6; // Ajusta según tus requerimientos
+    };
+
     const handleRegister = async () => {
         if (!email || !password || !confirmPassword || !rut || !telefono || !userName) {
             setErrorMessage("Por favor, completa todos los campos.");
@@ -68,6 +74,11 @@ export const RegisterPage = () => {
             return;
         }
 
+        if (!isPasswordValid(password)) {
+            setErrorMessage("La contraseña debe tener al menos 6 caracteres.");
+            return;
+        }
+
         const userQuery = query(collection(db, "Usuario"), where("userName", "==", userName));
         const querySnapshot = await getDocs(userQuery);
         if (!querySnapshot.empty) {
@@ -76,13 +87,26 @@ export const RegisterPage = () => {
         }
 
         try {
-            await addDoc(collection(db, "Usuario"), {
+            const docRef = await addDoc(collection(db, "Usuario"), {
                 correoUser: email,
                 passwordUser: password,
                 rutUser: rut,
                 telefonoUser: telefono,
                 userName: userName,
             });
+            
+            // Guarda la información del usuario en localStorage
+            const userData = {
+                id: docRef.id,
+                correoUser: email,
+                userName: userName,
+                rutUser: rut,
+                telefonoUser: telefono,
+            };
+
+            localStorage.setItem("user", JSON.stringify(userData)); // Guarda en localStorage
+            login(userData); // Llama a la función de login con el nuevo usuario
+
             setSuccessModal(true);
             setErrorMessage("");
         } catch (error) {
@@ -159,14 +183,14 @@ export const RegisterPage = () => {
 
                         <button className="registerButtonInput" onClick={handleRegister}>Registrarse</button>
 
-                        {errorMessage && <p className="error-message">{errorMessage}</p>}
+                        {errorMessage && <p className="error-message" role="alert">{errorMessage}</p>}
                     </div>
                 </div>
 
                 {successModal && (
-                    <div className="modal-container">
+                    <div className="modal-container" role="dialog" aria-labelledby="success-modal" aria-modal="true">
                         <div className="modal-content">
-                            <h2>Registro exitoso</h2>
+                            <h2 id="success-modal">Registro exitoso</h2>
                             <button onClick={handleContinue}>Continuar</button>
                         </div>
                     </div>
