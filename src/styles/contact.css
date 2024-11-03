@@ -1,0 +1,75 @@
+.bottomHeaderContact{
+    background-color: #191D32;
+    padding: 20px 0;
+    text-align: center;
+
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.contactTextHeader{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: start;
+    justify-items: center;
+
+    padding-left: 50px;
+    width: 60%;
+}
+
+.contactTextHeader p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Jockey One";
+    font-size: clamp(1.5rem, 3.5vw, 4rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.contactImageHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 40%;
+}
+
+.contactImageHeader img{
+    width: 50%;
+    height: 80%;
+}
+
+.contactButtonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonsItems{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 300px;
+
+    border: 1px solid red;
+}
+
+
+@media (max-width: 768px) {
+
+
+    /*Container parte baja del header*/
+    .bottomHeaderContact{
+        height: 100px;
+    }
+}

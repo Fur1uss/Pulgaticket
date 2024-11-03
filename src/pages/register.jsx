@@ -183,7 +183,7 @@ export const RegisterPage = () => {
 
                         <button className="registerButtonInput" onClick={handleRegister}>Registrarse</button>
 
-                        {errorMessage && <p className="error-message" role="alert">{errorMessage}</p>}
+                        {errorMessage && <p className="error-message" role="alert">{"⚠️"+errorMessage}</p>}
                     </div>
                 </div>
 
