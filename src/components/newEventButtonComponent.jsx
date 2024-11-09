@@ -4,6 +4,6 @@ import { UserContext } from "../users/userContext";
 
 export default function NewEventButtonComponent() {
   return (
-    <button className="new-event-button">Vender entrada</button>
+    <button className="new-event-button"><Link to="/new-event-sell">Vender entrada</Link></button>
   );
 }

@@ -38,6 +38,7 @@ import { About } from "./pages/about";
 import { Contact } from "./pages/contact";
 import { LoginPage } from "./pages/login";
 import { RegisterPage } from "./pages/register";
+import { NewEvent } from "./pages/new-event";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <StrictMode>
@@ -86,6 +87,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                                 <RegisterPage />
                             </>
                         } />
+
+                        {/* Ruta para registrar una entrada */}
+                        <Route path="/new-event-sell" element ={
+                            <>
+                                <NewEvent />
+                            </>
+                        }/>
+
                     </Routes>
             </BrowserRouter>
 
