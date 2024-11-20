@@ -1,8 +1,26 @@
-# React + Vite
+# Pulgaticket! 🪳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a **Pulgaticket!**, una plataforma web segura y confiable para la **reventa de entradas** para eventos. Este proyecto tiene como objetivo conectar compradores y vendedores, asegurando una experiencia transparente y libre de riesgos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características principales
+
+- 🌐 **Compra y venta de entradas**: Publica y encuentra entradas para cualquier tipo de evento.
+- 🔒 **Ambiente seguro y confiable**: Verificación de usuarios para proteger a compradores y vendedores.
+- ⭐ **Reseñas y calificaciones**: Califica a los vendedores para ayudar a la comunidad.
+- 📅 **Gestión de eventos**: Fácil navegación para encontrar los eventos más destacados.
+- 📱 **Interfaz intuitiva**: Experiencia de usuario moderna y accesible desde cualquier dispositivo.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Frontend**: React, HTML5, CSS3
+- **Backend**: Firebase
+- **Base de datos**: Firestore
+- **Herramientas adicionales**:
+- Vite para el entorno de desarrollo
+- GitHub para control de versiones
+
+---
